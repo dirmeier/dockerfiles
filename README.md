@@ -7,10 +7,10 @@ A collection of docker files.
  Clone the repository and install a docker file like this:
 
 ```sh
-  cd FOLDER
-  docker build -t FOLDER .
+  ./build.sh <folder>
 ```
 
+You can then run the installed image as usual.
 
 
 ## Author
