@@ -10,7 +10,11 @@ A collection of docker files.
   ./build.sh <folder>
 ```
 
-You can then run the installed image as usual.
+You can then run the installed image as usual. For instance, if you want to start a container and mount the current directory to `/mnt`:
+
+```sh
+  docker run -itv $(pwd):/mnt boost bash
+```
 
 
 ## Author
