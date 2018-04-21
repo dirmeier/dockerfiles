@@ -1,4 +1,4 @@
-FROM rocker/r-base
+FROM rocker/r-devel
 
 RUN R -e "install.packages(c('Rcpp', 'RcppEigen', 'RcppArmadillo'))"
-RUN apt-get update && apt-get install -y valgrind
+
