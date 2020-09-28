@@ -9,15 +9,21 @@ A collection of docker files.
  Clone the repository and install a docker file like this:
 
 ```sh
-  ./build.sh <folder>
+  cd <folder>
+  docker build . -t <name>
 ```
 
 You can then run the installed image as usual. For instance, if you want to start a container and mount the current directory to `/mnt`:
 
 ```sh
-  docker run -itv $(pwd):/mnt boost bash
+  docker run -itv $(pwd):/mnt <name> bash
 ```
 
+With the running container, you can install stuff as always. Restart the container with
+
+```sh
+  docker start <name of container>
+```
 
 ## Author
 
