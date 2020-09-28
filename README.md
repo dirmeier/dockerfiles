@@ -25,6 +25,12 @@ With the running container, you can install stuff as always. Restart the contain
   docker start <name of container>
 ```
 
+Delete all containers using
+
+```sh
+  docker container rm $(docker container ls -aq)
+```
+
 ## Author
 
 * Simon Dirmeier <a href="mailto:simon.dirmeier@web.de">simon.dirmeier@web.de</a>
