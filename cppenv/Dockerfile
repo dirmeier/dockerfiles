@@ -7,7 +7,8 @@ RUN apt-get update && \
     apt-get install -y python3-venv python3-pip && \
     apt-get install -y wget cmake pkg-config && \
     apt-get install -y clang-tidy cppcheck && \
-    apt-get install -y doxygen
+    apt-get install -y doxygen && \
+    apt-get install -y git
 RUN pip3 install meson ninja clang-format cpplint
 RUN wget https://github.com/google/googletest/archive/release-1.10.0.tar.gz \
     && mkdir googletest \
