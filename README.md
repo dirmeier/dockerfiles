@@ -22,7 +22,7 @@ You can then run the installed image as usual. For instance, if you want to star
 With the running container, you can install stuff as always. Restart the container with
 
 ```sh
-  docker start <name of container>
+  docker start -i <name of container>
 ```
 
 Delete all containers using
