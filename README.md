@@ -8,29 +8,35 @@ A collection of docker files.
 
  Clone the repository and install a docker file like this:
 
-```sh
+```bash
   cd <folder>
   docker build . -t <name>
 ```
 
 You can then run the installed image as usual. For instance, if you want to start a container and mount the current directory to `/mnt`:
 
-```sh
+```bash
   docker run -itv $(pwd):/mnt <name> bash
 ```
 
 With the running container, you can install stuff as always. Restart the container with
 
-```sh
+```bash
   docker start -i <name of container>
 ```
 
 Delete all containers using
 
-```sh
+```bash
+  docker container rm $(docker container ls -aq)
+```
+
+Delete all images using
+
+```bash
   docker container rm $(docker container ls -aq)
 ```
 
 ## Author
 
-* Simon Dirmeier <a href="mailto:simon.dirmeier@web.de">simon.dirmeier@web.de</a>
+* Simon Dirmeier <a href="mailto:simon.dirmeier @ web.de">simon.dirmeier @ web.de</a>
