@@ -34,7 +34,7 @@ Delete all containers using
 Delete all images using
 
 ```bash
-  docker container rm $(docker container ls -aq)
+  docker rmi $(docker images -a -q)
 ```
 
 ## Author
